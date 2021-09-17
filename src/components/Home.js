@@ -6,9 +6,9 @@ export class Home extends Component {
           <div className="site-main">
             <div className="pk-container">
                 <div className="row">
-                    <div className="col-4 header-tabs">col-4</div>
-                    <div className="col-4 header-tabs">col-4</div>
-                    <div className="col-4 header-tabs">col-4</div>
+                    <div className="col-4 header-tabs">BOOKS</div>
+                    <div className="col-4 header-tabs">CHAPTERS</div>
+                    <div className="col-4 header-tabs">VERSES</div>
                 </div>
                 <form className="search">
                     {/* <button type="submit"><i className="fa fa-search"></i></button> */}
