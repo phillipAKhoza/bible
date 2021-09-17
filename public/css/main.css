@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+.header-tabs{
+    border-bottom: 2px solid rgb(158, 158, 158);
+    padding: 30px 0 30px 0;
+    text-align: center;
+    cursor:pointer;
+    vertical-align:middle;
+    font-size: 20px;
+}
+
+form.search input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 100%;
+    background: #f1f1f1;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    background-color: none;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    outline: none;
+}
