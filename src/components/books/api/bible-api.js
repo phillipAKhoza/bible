@@ -2,16 +2,28 @@ import React, { Component } from 'react';
 // import data from './books.json';
 import books from './Bible-books.json';
 
+export function Welcome(props) {
+
+  return <h1>Hello, {props.name}</h1>;
+}
+
 export class Bible extends Component {
   constructor(props) {
     super(props);
     this.state = {
       search: '',
+      book:''
     };
+    this.handleClick = this.handleClick.bind(this);
   }
   updateState(event){
       this.setState({ search: event.target.value.substr(0,20) });
     }
+    handleClick(event, index) {
+      this.setState({ book: event });
+    console.log(event+" is clicked and is in index "+index);
+    <Welcome name="Phillip"/>
+  }
   
     render() {
         return (       
@@ -35,7 +47,10 @@ export class Bible extends Component {
                 
               ).map(((item,index) => {
                 return(
-                <div key={index} className="post">
+                <div key={index} className="post" onClick={()=> {
+                  this.handleClick(item, index)
+                  
+                  }}>
                   <h3>{item}</h3>
                   {/* <p>{item.body}</p> */}
                 </div>

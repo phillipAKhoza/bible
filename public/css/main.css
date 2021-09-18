@@ -5,6 +5,7 @@
     top: 0;
     background-color: #fff;
     width: 100%;
+    font-weight: bold;
 }
 
 form.search input[type=text] {

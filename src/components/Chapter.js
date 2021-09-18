@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import Bible from './books/api/bible-api';
 import Header from './layout/Header'
-export class Home extends Component {
-    constructor(props) {
-    super(props);
-    this.state = {
-      search: '',
-    };
-  }
+export class Chapter extends Component {
+    
     render() {
         return (       
           <div className="site-main">
@@ -15,8 +10,8 @@ export class Home extends Component {
                 <div className="header-container">
                     <Header/>
                 </div>
-                <div className="books-container">
-                    <Bible/>
+                <div className="chapter-container">
+                    
                 </div>
             </div>
           </div>
