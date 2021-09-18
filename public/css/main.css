@@ -1,27 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
-body {
-    overflow: hidden; /* Hide scrollbars */
-  }
-.header-tabs{
-    border-bottom: 2px solid rgb(158, 158, 158);
-    padding: 30px 0 30px 0;
-    text-align: center;
-    cursor:pointer;
-    vertical-align:middle;
-    font-size: 20px;
+.header-container{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
 }
 
 form.search input[type=text] {
     font-size: 17px;
     width: 100%;
-    border-bottom: 1px solid #ccc;
-    font-size: 16px;
+    border-bottom: 0 0 1px 0 solid #ccc;
     background-color: none;
     background-image: url('../images/searcicon.png');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 15px 0px 15px 50px;
-    /* outline: none; */
+    outline: none;
 }
-
-
+.post{
+    background-color: #eee;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .pagination{
+    margin: 1rem auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  .active{
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 0 3px;
+    outline: none;
+  }
+  .books-container{
+    height: auto;
+    overflow: 'auto';
+    height: 100%;
+    display: 'block';
+  }

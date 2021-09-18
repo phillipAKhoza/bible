@@ -1,11 +1,104 @@
-@media only screen and (min-width: 0px) {
-
+@media only screen and (min-width: 320px) {
+  .pk-container{
+    max-width: 330px;
+    margin: 0;
+  }
+  .row{
+    max-width: 380px;
+  }
+  .header-tabs{
+    border-bottom: 2px solid rgb(158, 158, 158);
+    padding: 10px 0 10px 0;
+    text-align: center;
+    cursor:pointer;
+    vertical-align:middle;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 360px) {
+  .pk-container{
+    max-width: 360px;
+    margin: 0;
+  }
+  .row{
+    max-width: 385px;
+  }
+  .header-tabs{
+    border-bottom: 2px solid rgb(158, 158, 158);
+    padding: 10px 0 10px 0;
+    text-align: center;
+    cursor:pointer;
+    vertical-align:middle;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .pk-container{
+    max-width: 375px;
+    margin: 0;
+  }
+  .row{
+    max-width: 387px;
+  }
+  .header-tabs{
+    border-bottom: 2px solid rgb(158, 158, 158);
+    padding: 10px 0 10px 0;
+    text-align: center;
+    cursor:pointer;
+    vertical-align:middle;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .pk-container{
+    max-width: 425px;
+    margin: 0;
+  }
+  .row{
+    max-width: 437px;
+  }
+  .header-tabs{
+    border-bottom: 2px solid rgb(158, 158, 158);
+    padding: 10px 0 10px 0;
+    text-align: center;
+    cursor:pointer;
+    vertical-align:middle;
+    font-size: 20px;
+  }
 }
 @media only screen and (min-width: 768px){
-
+  .pk-container{
+    max-width: 768px;
+    margin: 0;
+  }
+  .row{
+    max-width: 780px;
+  }
+  .header-tabs{
+    border-bottom: 2px solid rgb(158, 158, 158);
+    padding: 20px 0 20px 0;
+    text-align: center;
+    cursor:pointer;
+    vertical-align:middle;
+    font-size: 20px;
+}
 }
 @media only screen and (min-width: 992px) {
-  
+  .pk-container{
+    max-width: 992px;
+    margin: auto;
+  }
+  .row{
+    max-width: 1010px;
+  }
+  .header-tabs{
+    border-bottom: 2px solid rgb(158, 158, 158);
+    padding: 30px 0 30px 0;
+    text-align: center;
+    cursor:pointer;
+    vertical-align:middle;
+    font-size: 20px;
+}
 }
 @media only screen and (min-width: 1024px) {
   .pk-container{
@@ -13,6 +106,14 @@
     margin: auto;
   }
   .row{
-    max-width: 1024px;
+    max-width: 1036px;
   }
+  .header-tabs{
+    border-bottom: 2px solid rgb(158, 158, 158);
+    padding: 30px 0 30px 0;
+    text-align: center;
+    cursor:pointer;
+    vertical-align:middle;
+    font-size: 20px;
+}
 }
