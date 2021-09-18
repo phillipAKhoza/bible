@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Bible from './books/api/bible-api';
+// import Bible from './books/api/bible-api';
 import Header from './layout/Header'
-export class Chapter extends Component {
+export default class Chapter extends Component {
     
     render() {
         return (       
@@ -20,4 +20,3 @@ export class Chapter extends Component {
 }
 
 
-export default Home;

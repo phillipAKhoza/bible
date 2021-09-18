@@ -3,6 +3,7 @@ import {createBrowserHistory} from 'history';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 import Home from './components/Home';
+import Chapter from './components/Chapter';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const appHistory = {
@@ -16,7 +17,8 @@ function App() {
           <div id="preloader">
             <div id="status">&nbsp;</div>
           </div> 
-        <Route exact path='/' component={ Home } />  
+        <Route exact path='/' component={ Home } />
+        <Route  path='/chapter' component={Chapter}/>
     </Router>  
     </div> 
   );

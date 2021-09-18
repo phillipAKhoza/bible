@@ -47,6 +47,7 @@ export class Bible extends Component {
                 
               ).map(((item,index) => {
                 return(
+                  <a href={process.env.PUBLIC_URL + '/chapter'}>
                 <div key={index} className="post" onClick={()=> {
                   this.handleClick(item, index)
                   
@@ -54,6 +55,7 @@ export class Bible extends Component {
                   <h3>{item}</h3>
                   {/* <p>{item.body}</p> */}
                 </div>
+                </a>
               )}
               ))
             }
