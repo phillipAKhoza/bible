@@ -23,6 +23,7 @@ form.search input[type=text] {
     background-color: #eee;
     margin: 1rem;
     padding: 1rem;
+    cursor: pointer;
   }
   .pagination{
     margin: 1rem auto;

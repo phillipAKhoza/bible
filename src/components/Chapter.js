@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
-// import Bible from './books/api/bible-api';
-import Header from './layout/Header'
+import chapters from './books/api/chapters.json';
+import Header from './layout/Header';
+
 export default class Chapter extends Component {
-    
+    constructor(props) {
+        super(props);
+        this.state = {
+        place: this.props.location.chapterProps.place,
+        book: this.props.location.chapterProps.book,
+        };
+        // console.log(this.state.place);
+        console.log(this.state.book+" has "+chapters[this.state.place]+" chapters");
+    }
     render() {
         return (       
           <div className="site-main">

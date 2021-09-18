@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 // import data from './books.json';
 import books from './Bible-books.json';
+import {Link} from 'react-router-dom';
 
-export function Welcome(props) {
-
-  return <h1>Hello, {props.name}</h1>;
-}
-
-export class Bible extends Component {
+export default class Bible extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,8 +17,7 @@ export class Bible extends Component {
     }
     handleClick(event, index) {
       this.setState({ book: event });
-    console.log(event+" is clicked and is in index "+index);
-    <Welcome name="Phillip"/>
+    // console.log(event+" is clicked and is in index "+index);
   }
   
     render() {
@@ -47,15 +42,22 @@ export class Bible extends Component {
                 
               ).map(((item,index) => {
                 return(
-                  <a href={process.env.PUBLIC_URL + '/chapter'}>
                 <div key={index} className="post" onClick={()=> {
                   this.handleClick(item, index)
                   
                   }}>
+                  <Link to={{
+                    pathname: "/chapter",
+                    chapterProps: {
+                      place: index,
+                      book: item,
+                    }
+                  
+                  }}>
                   <h3>{item}</h3>
                   {/* <p>{item.body}</p> */}
+                  </Link>
                 </div>
-                </a>
               )}
               ))
             }
@@ -63,6 +65,3 @@ export class Bible extends Component {
         )
     }
 }
-
-
-export default Bible;
