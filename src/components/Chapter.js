@@ -68,6 +68,10 @@ export default class Chapter extends Component {
              book_chapters: book_chapter,
           });   
     }
+
+    UNSAFE_componentWillMount(){
+        console.log('hello bro');
+    }
     
     render() {
         return (       
