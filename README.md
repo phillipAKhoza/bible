@@ -1,4 +1,42 @@
-# Getting Started with Create React App
+# BiBle Application
+
+This ia a bible application it functions like any other bible app the difference is that this one is a web app and it is light weight both bible books and chapters are locally while the actuall content of bible book and chapter is then loaded when selected only.
+
+i used [Rapid_Api](https://rapidapi.com/collection/best-bible-religion-apis) for Retrieving The old Testament and The New Testament scriptures based on book and chapter selected.
+
+# GetBooks
+
+Get List Of All Books.
+
+**GetChapter**
+Get Chapter
+
+|Field	|Type|	Description|
+|---|---|---|
+|Book	|String|    Enter one of the books from Bible|
+|chapter	|Number|	Enter chapter number from given book|
+
+**GetVerses**
+Get Verses
+
+|Field	|Type|	Description|
+|---|---|---|
+|Book	|String|	Enter one of the books from Bible|
+|chapter	|Number|	Enter chapter number from given book|
+|VerseFrom   |Number|  Enter Verse to start|
+|VerseTo |Number|  Enter Verse to End|
+
+
+**GetVerseOfaChapter**
+Get Verses of the chapter
+
+|Field	|Type|	Description|
+|Book	|String|	Enter one of the books from Bible|
+|chapter	|Number|	Enter chapter number from given book|
+|Verse   |Number| Enter Verse|
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
