@@ -15,8 +15,8 @@ export default class Chapter extends Component {
 
         this.state.place= this.props.location.chapterProps.place;
         this.state.book= this.props.location.chapterProps.book;
-        console.log(this.state.place);
-        console.log(this.state.book+" has "+chapters[this.state.place]+" chapters");
+        //console.log(this.state.place);
+        //console.log(this.state.book+" has "+chapters[this.state.place]+" chapters");
         if(this.state.place !== -1){
             for(let i = 0; i< chapters[this.state.place]; i++){
                 // this.setState({
@@ -30,11 +30,11 @@ export default class Chapter extends Component {
                 this.state.book_chapters[i]= i +1;
                 // });
             }
-            console.log(this.state.place);
-            console.log(this.state.book+" has "+chapters[this.state.place]+" chapters");
+            // console.log(this.state.place);
+            // console.log(this.state.book+" has "+chapters[this.state.place]+" chapters");
         }
         }catch(e){
-            // console.log(e);
+            console.log(e);
         }
     }
     withChapter(){
@@ -69,9 +69,9 @@ export default class Chapter extends Component {
           });   
     }
 
-    UNSAFE_componentWillMount(){
-        console.log('hello bro');
-    }
+    // UNSAFE_componentWillMount(){
+    //     console.log('hello bro');
+    // }
     
     render() {
         return (       

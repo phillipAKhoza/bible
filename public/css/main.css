@@ -26,6 +26,9 @@ form.search input[type=text] {
     cursor: pointer;
     text-decoration: none;
   }
+  .post:hover{
+    background-color: rgb(231, 231, 231);
+  }
   .pagination{
     margin: 1rem auto;
     list-style: none;
@@ -63,3 +66,18 @@ form.search input[type=text] {
     color: #000;
     text-decoration-color: #eee;
   }
+/* tabs*/
+.tabs{
+  text-decoration: none;
+  color: #000;
+}
+.header-tabs{
+  background-color: #ccc;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+.header-tabs:hover{
+  background-color: rgb(133, 133, 133);
+  color: #000;
+}
